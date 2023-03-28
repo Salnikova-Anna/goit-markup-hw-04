@@ -46,11 +46,10 @@ img {
 }
 
 .container {
-  width: 1158px;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* border: 2px solid red; */
 }
 
 .visually-hidden {
@@ -98,10 +97,6 @@ body {
 }
 
 .section {
-  padding-bottom: 120px;
-}
-
-.section-bottom-padding {
   padding-bottom: 120px;
 }
 
@@ -189,8 +184,19 @@ body {
 
 /* ====================HERO==================== */
 .hero {
-  background-color: var(--secondary-background-color);
+  margin: 0 auto;
   padding: 188px 0;
+  max-width: 1440px;
+  max-height: 600px;
+  background-color: var(--secondary-background-color);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/main-page-images/hero-bg-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -233,6 +239,17 @@ body {
   padding-top: 120px;
 }
 
+.values-box {
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  background-color: var(--tretiary-background-color);
+  border-radius: 4px;
+}
+
 .values-list {
   display: flex;
 }
@@ -247,7 +264,7 @@ body {
 
 /* ====================ACTIVITY==================== */
 
-.activity-chapter-margin {
+.activity-chapter {
   margin-bottom: 72px;
 }
 
@@ -282,8 +299,8 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-chapter-margin {
-  margin-bottom: 69px;
+.team-chapter {
+  margin-bottom: 72px;
 }
 
 .team-list {
@@ -296,6 +313,16 @@ body {
 
 .team-item:not(:first-child) {
   margin-left: var(--item-gap);
+}
+
+/* ====================CUSTOMERS==================== */
+
+.customers {
+  padding-top: 120px;
+}
+
+.customers-chapter {
+  margin-bottom: 72px;
 }
 
 /* ====================PORTFOLIO==================== */
@@ -382,4 +409,16 @@ body {
   color: var(--tretiary-color);
   width: 264px;
   margin-top: 16px;
+}
+
+.soc-title {
+  color: var(--primary-botton-color);
+}
+
+.footer-thumb {
+  display: flex;
+}
+
+.footer-box:not(:last-child) {
+  margin-right: 120px;
 }
